@@ -6,11 +6,11 @@
 name: citibike
 description: "Downloads bike information from CitiBike website"
 maintainers:
-  - Peter Henderson <name@domain.com>
+  - Enigma Technologies <name@company.com>
 version: "1.0.0"
 license: none
 source_urls:
-  - "http://example.org/example.csv"
+  - "https://feeds.citibikenyc.com/stations/stations.json"
 
 extract:
   - data.yaml
