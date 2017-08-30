@@ -4,7 +4,7 @@
 ###
 
 name: citibike
-description: "Download bike information from CitiBike website"
+description: "Downloads bike information from CitiBike website"
 maintainers:
   - Peter Henderson <name@domain.com>
 version: "1.0.0"
