@@ -1,0 +1,16 @@
+###
+# Parsefile for citibike
+# 2017-08-28
+###
+
+name: citibike
+description: "Download bike information from CitiBike website"
+maintainers:
+  - Peter Henderson <name@domain.com>
+version: "1.0.0"
+license: none
+source_urls:
+  - "http://example.org/example.csv"
+
+extract:
+  - data.yaml
