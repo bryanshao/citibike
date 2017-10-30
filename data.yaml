@@ -22,6 +22,10 @@ transform:
         type: integer
 
 load:
-  - step: 4. Output to local CSV file
-    action: load.OutputCSV
-    repository: .
+  - step: Send to Assembly
+    action: load.OutputAbstract
+    trusted: yes
+    db_boundary: concourse.demo
+    table_key: concourse.demo.citibike
+    repository: '{ context.repository }'
+    credentials: '{ context.credentials }'
