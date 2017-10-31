@@ -22,10 +22,13 @@ transform:
         type: integer
 
 load:
+  - step: Set the datapath
+    action: load.SetTableName
+    table_name: concourse.demo.citibike
+
   - step: Send to Assembly
     action: load.OutputAbstract
     trusted: yes
     db_boundary: concourse.demo
-    table_key: concourse.demo.citibike
     repository: '{ context.repository }'
     credentials: '{ context.credentials }'
